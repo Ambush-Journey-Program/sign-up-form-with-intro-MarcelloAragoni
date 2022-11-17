@@ -1,0 +1,16 @@
+.main {
+  margin: auto;
+  width: 32.8125rem;
+
+  &--title {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 700;
+  }
+
+  &--text {
+    margin-top: 11px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
