@@ -9,11 +9,11 @@
     display: none;
   }
 
-  &+.required {
+  &+.required-label {
     margin: 0;
   }
 
-  &+.invalid {
+  &+.invalid-label {
     margin: 0;
   }
 }
@@ -21,7 +21,7 @@
 .touched:invalid {
   border: 1px solid $red;
 
-  &:invalid+.required::after {
+  &:invalid+.required-label::after {
     right: 0;
     margin-right: 2.1rem;
     position: absolute;
@@ -30,7 +30,7 @@
     color: $red;
   }
 
-  &:invalid+.invalid::after {
+  &:invalid+.invalid-label::after {
     right: 0;
     margin-right: 2.1rem;
     position: absolute;
