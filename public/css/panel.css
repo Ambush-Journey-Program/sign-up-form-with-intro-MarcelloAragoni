@@ -1,0 +1,7 @@
+.panel {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 32.8125rem 33.75rem;
+  grid-column-gap: 2.8125rem;
+  margin: 7.5625rem 10.3125rem;
+}

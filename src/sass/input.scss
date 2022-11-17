@@ -1,0 +1,44 @@
+@import './root.scss';
+
+.signup__input {
+  width: 28.75rem;
+  height: 3.5rem;
+  position: relative;
+
+  &:valid {
+    &+span {
+      display: none;
+    }
+  }
+
+  &+.required {
+    margin: 0;
+  }
+
+  &+.invalid {
+    margin: 0;
+  }
+}
+
+.touched:invalid {
+  border: 1px solid $red;
+
+  &+.required::after {
+      right: 0;
+      margin-right: 2.1rem;
+      position: absolute;
+      font-size: 0.7rem;
+      content: "Required";
+      color: $red;
+  }
+
+  &+.invalid::after {
+      right: 0;
+      margin-right: 2.1rem;
+      position: absolute;
+      font-size: 0.7rem;
+      content: "Invalid";
+      color: $red;
+  }
+
+}

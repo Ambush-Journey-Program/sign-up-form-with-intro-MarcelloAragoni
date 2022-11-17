@@ -1,0 +1,19 @@
+@import './root.scss';
+@import './panel.scss';
+@import './input.scss';
+@import './signup.scss';
+@import './button.scss';
+@import './main.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+body {
+    color: $white;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+html {
+  background-image: url("../assets/bg-intro-desktop.png");
+  background-color: $red;
+}

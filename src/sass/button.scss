@@ -1,0 +1,12 @@
+@import './root.scss';
+
+.button {
+    background-color: $green;
+    color: $white;
+    font-weight: 600;
+    width: 29.25rem;
+    height: 3.5rem;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,34 @@
+.signup__input {
+  width: 28.75rem;
+  height: 3.5rem;
+  position: relative;
+}
+.signup__input:valid + span {
+  display: none;
+}
+.signup__input + .required {
+  margin: 0;
+}
+.signup__input + .invalid {
+  margin: 0;
+}
+
+.touched:invalid {
+  border: 1px solid #FF7979;
+}
+.touched:invalid + .required::after {
+  right: 0;
+  margin-right: 2.1rem;
+  position: absolute;
+  font-size: 0.7rem;
+  content: "Required";
+  color: #FF7979;
+}
+.touched:invalid + .invalid::after {
+  right: 0;
+  margin-right: 2.1rem;
+  position: absolute;
+  font-size: 0.7rem;
+  content: "Invalid";
+  color: #FF7979;
+}
